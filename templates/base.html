@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <style>
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        .nav-buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">DV05</h1>
+        <nav class="nav-buttons" style="display: flex; justify-content: center;">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+        <p>Contact us: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        <p>Follow us on:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://instagram.com">Instagram</a>
+        </p>
+        <p>Address: 123 Main St, City, Country</p>
+    </footer>
+</body>
+</html>

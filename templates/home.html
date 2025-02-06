@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - My Website
+{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center;">Карточки к ДЗ </h1>
+    <div class="card-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div class="card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; text-align: center; width: 250px;">
+            <img src="{{ url_for('static', filename='img/Piter Beck.jpg') }}" alt="Piter Beck" style="width: 100%; border-radius: 10px;">
+            <h2>Peter Joseph Beck</h2>
+            <p>Email: PeterJosephBeck@gmail.com</p>
+            <p>Birthday: 1976</p>
+            <p>City: Invercargill</p>
+        </div>
+        <div class="card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; text-align: center; width: 250px;">
+            <img src="{{ url_for('static', filename='img/Jeff Bezos.jpg') }}" alt="Jeff Bezos" style="width: 100%; border-radius: 10px;">
+            <h2>Jeff Bezos</h2>
+            <p>Email: JeffBezos@gmail.com</p>
+            <p>Birthday: 12/01/1964</p>
+            <p>City: Albuquerque</p>
+        </div>
+        <div class="card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; text-align: center; width: 250px;">
+            <img src="{{ url_for('static', filename='img/elon mask.jpg') }}" alt="Elon Musk" style="width: 100%; border-radius: 10px;">
+            <h2>Elon Reeve Musk</h2>
+            <p>Email: ElonMusk@gmail.com</p>
+            <p>Birthday: 21/06/1971</p>
+            <p>City: Pretoria</p>
+        </div>
+    </div>
+{% endblock %}
