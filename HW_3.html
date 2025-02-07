@@ -1,56 +1,140 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">какие бывают попаданцы</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        колонка 1
-      </div>
-      <div class="col">
-        колонка 2
-      </div>
-      <div class="col">
-        колонка 3
-      </div>
-      <div class="col">
-        колонка 1
-      </div>
-      <div class="col">
-        колонка 2
-      </div>
-      <div class="col">
-        колонка 3
-      </div>
-      <div class="col">
-        колонка 1
-      </div>
-      <div class="col">
-        колонка 2
-      </div>
-      <div class="col">
-        колонка 3
-      </div>
-      <div class="col">
-        колонка 1
-      </div>
-      <div class="col">
-        колонка 2
-      </div>
-      <div class="col">
-        колонка 3
-      </div>
-    </div>
-  </div>
+    <!-- Основной контент -->
+    <main class="container mt-4">
+        <!-- Слайдер -->
+        <section>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=img/histor.jpg class="d-block w-50" alt="Слайд 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=img/now.jpg class="d-block w-50" alt="Слайд 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=img/budu.jpg class="d-block w-50" alt="Слайд 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Карточки -->
+        <section class="mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src=img/histor.jpg class="card-img-top" alt="Картинка 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Попали в прошлое</h5>
+                            <p class="card-text">попаданцы в прошлое - до 21 века.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src=img/now.jpg class="card-img-top" alt="Картинка 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Попали в настоящее</h5>
+                            <p class="card-text">настоящее время с 2000г  по 2025г.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src=img/budu.jpg class="card-img-top" alt="Картинка 3">
+                        <div class="card-body">
+                            <h5 class="card-title">попали в будующие</h5>
+                            <p class="card-text">попали в будующие с 2025 и дальше можно и в 2100 год.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Аккордеон -->
+        <section class="mt-4">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Попали в прошлое
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">Попаданцы в прошлое — это те, кто переместился во времени до XXI века.
+                            Они могут оказаться в эпохе древних цивилизаций, средневековье или в XIX веке. Такие истории
+                            часто описывают трудности адаптации к устаревшим технологиям, новым социальным нормам и
+                            историческим событиям.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Попали в настоящее
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">Попаданцы в настоящее время (2000-2025 гг.) могут быть людьми
+                            из прошлого или будущего. Это порождает интересные конфликты: как человек из XIX века
+                            справится с современными технологиями? Или что сделает путешественник из будущего,
+                            зная грядущие события?</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Попали в будущее
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">Попаданцы в будущее — это те, кто переместился за 2025 год.
+                            Такие истории позволяют авторам фантазировать о возможных технологиях, развитии
+                            общества и космических путешествиях. Главные герои вынуждены разбираться в
+                            неизвестных технологиях и новых социальных структурах.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>Контакты: example@email.com | Телефон: +7 123 456 7890</p>
+        <p>
+            <a href="#" class="text-white me-2">Facebook</a>
+            <a href="#" class="text-white me-2">Twitter</a>
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
